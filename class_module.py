@@ -47,3 +47,13 @@ class BankAccount:
         print(f'Account Number: ****{self.account_number[4:]}')
         print(f'Routing Number: {self.routing_number}')
         print(f'Balance: ${self.balance:.2f}')
+
+    def atm_fee(self):
+        """When called this method charge a fee for withdrawing money from the ATM terminal."""
+
+        self.balance -= 3.5
+
+    def show_credentials(self):
+        print(f'Full Name: {self.full_name}')
+        print(f'Account Number: {self.account_number}')
+        print(f'Balance: ${self.balance:.2f}')
